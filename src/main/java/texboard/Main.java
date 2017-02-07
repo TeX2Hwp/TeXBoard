@@ -13,7 +13,7 @@ public class Main {
         String formula = scanner.nextLine();
 
         MLNode node = parser.parse("$" + formula + "$");
-        System.out.println("Parsed the formula and generated TeXNode instance : " + node.toString());
+        System.out.println("Parsed the formula and generated MLNode instance : " + node.toString());
 
         String hwp = converter.convert(node);
         System.out.println("Converted the formula to Hwp style formula : " + hwp);
